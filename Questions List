@@ -1,0 +1,23 @@
+Question 1:  Create a SQLite database connection to a database that resides in the memory - Show your python code and the table structure. 
+
+Question 2:  Write a Python program to create a SQLite database and connect with the database and print the version of the SQLite database - Show your Python code.
+
+Question 3:  Using Python and SQLite, create two Tables a: Hospital and b: Doctors
+
+a) Hospital:
+    Hospital_id
+    Hospital_Name
+    Bed-count
+
+b) Doctor:
+    Doctor_id
+    Doctor_Name
+    Hospital_id
+    Date_joined
+    Speciality
+    Salary
+    Experience
+
+Join these two tables by Hospital Id and then print and display the records on the screen.
+
+Question 4: Create fake Doctors names and Hospital information in a CSV file. At least 5 records total and import them into your SQLite database using Python.
