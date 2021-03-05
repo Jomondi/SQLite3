@@ -1,9 +1,9 @@
 import sqlite3, csv
 
 # Question 1 & 2
-conn = sqlite3.connect("Trial.db")
-# print(conn)
+conn = sqlite3.connect(":memory:")
 cursor = conn.cursor()
+print(f'Database instance connected to is {cursor}')
 
 
 # Question 3
@@ -48,10 +48,13 @@ def sql_query_data():
         print(result)
 
 # Call this function to create the tables
-# create_doctor_table()
-# create_hospital_table()
-#
+create_doctor_table()
+create_hospital_table()
+
 # # Call these functions to insert and commit data to the databases
-# insert_hospital_data()
-# insert_doctor_data()
-# conn.commit()
+insert_hospital_data()
+insert_doctor_data()
+conn.commit()
+
+# To pull the data run this function
+sql_query_data()
